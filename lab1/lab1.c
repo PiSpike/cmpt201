@@ -1,3 +1,7 @@
+// Lab 1
+// Spike Sorensen
+// 9/16/26
+
 #define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
