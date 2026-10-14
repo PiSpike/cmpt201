@@ -83,9 +83,19 @@ int main(void) {
   free(free_block3);
   free(free_block4);
   free(free_block5);
-  printf("find_first_fit: %d\n", first_fit_id);
-  printf("find_best_fit: %d\n", best_fit_id);
-  printf("find_worst_fit: %d\n", worst_fit_id);
+  printf("The ID for First-Fit algorithm is: %d\n", first_fit_id);
+  printf("The ID for Best-Fit algorithm is: %d\n", best_fit_id);
+  printf("The ID for Worst-Fit algorithm: %d\n", worst_fit_id);
 
   return 0;
 }
+/*
+void coalescing(*block)
+  start_ptr = block
+  while (block->next != null)
+    if (block->next is freed)
+      block.size += block.next.size
+      block.next = block.next.next
+
+    block = block.next
+*/
